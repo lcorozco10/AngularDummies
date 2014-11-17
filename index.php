@@ -1,7 +1,7 @@
 <?php
 class mainClass {
     function __construct() {
-        echo("Hola Mundo2");
+        echo("Hola Mundo3");
         
     }
 }
