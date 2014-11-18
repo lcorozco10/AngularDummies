@@ -6,6 +6,7 @@
 class Class2 {
 	// TODO - Insert your code here
 	const PI = 3.1415;
+	const G = 9.8;
 	/**
 	 */
 	function __construct() {
