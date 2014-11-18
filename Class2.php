@@ -5,7 +5,7 @@
  */
 class Class2 {
 	// TODO - Insert your code here
-
+	const PI = 3.1415;
 	/**
 	 */
 	function __construct() {
