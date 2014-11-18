@@ -10,7 +10,8 @@ class Class2 {
 	 */
 	function __construct() {
 
-		// TODO - Insert your code here
+		echo("Example");
+
 	}
 }
 
