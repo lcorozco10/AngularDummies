@@ -5,7 +5,9 @@ class mainClass {
 
     }
 }
-
+$obj = new Class1('Example');
+$var = $obj->getdato();
+echo $var;
 ?>
 <!doctype html>
 <html lang="en">
@@ -17,7 +19,7 @@ class mainClass {
 <table>
 	<tbody>
 		<td>
-			<tr><a href="#">columna 1</a></tr>
+			<tr><a href="#">columna 1.0</a></tr>
 			<tr><a href="#">columna 2</a></tr>
 			<tr><a href="#">columna 3</a></tr>
 		</td>
