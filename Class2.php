@@ -11,6 +11,9 @@ class Class2 {
 	function __construct() {
 
 		echo("Example");
+		echo("Example3");
+
+
 
 	}
 }
