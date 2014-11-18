@@ -5,6 +5,8 @@ vendor/
 .settings/
 .buildpath
 .project
+deployment.properties
+deployment.xml
 
 # Folder config file
 Desktop.ini
