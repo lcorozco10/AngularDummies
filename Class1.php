@@ -13,7 +13,10 @@ class Class1 {
 		$this->datos = isset($dato)? $dato : 'default';
 		// TODO - Insert your code here
 	}
-
+	/**
+	 * ver paramtro
+	 * @return string
+	 */
 	public function getdato() {
 		return $this->datos;
 	}
