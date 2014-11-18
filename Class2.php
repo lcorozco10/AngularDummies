@@ -15,6 +15,10 @@ class Class2 {
 		echo("Example");
 
 	}
+
+	public function operador() {
+		return PI*G;
+	}
 }
 
 ?>
