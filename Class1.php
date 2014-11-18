@@ -1,8 +1,7 @@
 <?php
 
 /**
- * @author COCOMSYS1
- *
+ * Info de la clase Class1
  */
 class Class1 {
 	// TODO - Insert your code here

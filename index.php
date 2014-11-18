@@ -1,4 +1,7 @@
 <?php
+/**
+ * Info de la clase mainClass
+ */
 require_once 'Class1.php';
 class mainClass {
     function __construct() {
