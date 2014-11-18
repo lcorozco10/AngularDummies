@@ -1,11 +1,12 @@
 <?php
+require_once 'Class1.php';
 class mainClass {
     function __construct() {
         echo("Hola Mundo3");
 
     }
 }
-$obj = new Class1('Example');
+$obj = new Class1();
 $var = $obj->getdato();
 echo $var;
 ?>
@@ -18,31 +19,31 @@ echo $var;
 <body>
 <table>
 	<tbody>
-		<td>
-			<tr><a href="#">columna 1.0</a></tr>
-			<tr><a href="#">columna 2</a></tr>
-			<tr><a href="#">columna 3</a></tr>
-		</td>
-		<td>
-			<tr><a href="#">columna 1</a></tr>
-			<tr><a href="#">columna 2</a></tr>
-			<tr><a href="#">columna 3</a></tr>
-		</td>
-		<td>
-			<tr><a href="#">columna 1</a></tr>
-			<tr><a href="#">columna 2</a></tr>
-			<tr><a href="#">columna 3</a></tr>
-		</td>
-		<td>
-			<tr><a href="#">columna 1</a></tr>
-			<tr><a href="#">columna 2</a></tr>
-			<tr><a href="#">columna 3</a></tr>
-		</td>
-		<td>
-			<tr><a href="#">columna 1</a></tr>
-			<tr><a href="#">columna 2</a></tr>
-			<tr><a href="#">columna 3</a></tr>
-		</td>
+		<tr>
+			<td><a href="#">Columna 1</a></td>
+			<td><a href="#">Columna 2</a></td>
+			<td><a href="#">Columna 3</a></td>
+		</tr>
+		<tr>
+			<td><a href="#">Columna 1</a></td>
+			<td><a href="#">Columna 2</a></td>
+			<td><a href="#">Columna 3</a></td>
+		</tr>
+		<tr>
+			<td><a href="#">Columna 1</a></td>
+			<td><a href="#">Columna 2</a></td>
+			<td><a href="#">Columna 3</a></td>
+		</tr>
+		<tr>
+			<td><a href="#">Columna 1</a></td>
+			<td><a href="#">Columna 2</a></td>
+			<td><a href="#">Columna 3</a></td>
+		</tr>
+		<tr>
+			<td><a href="#">Columna 1</a></td>
+			<td><a href="#">Columna 2</a></td>
+			<td><a href="#">Columna 3</a></td>
+		</tr>
 	</tbody>
 </table>
 </body>
