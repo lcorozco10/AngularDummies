@@ -18,7 +18,7 @@ echo $var;
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	<title>Document</title>
+	<title>Inicio</title>
 </head>
 <body>
 <table>

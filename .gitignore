@@ -1,12 +1,6 @@
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
-vendor/
-.settings/
-.buildpath
-.project
-deployment.properties
-deployment.xml
 
 # Folder config file
 Desktop.ini
