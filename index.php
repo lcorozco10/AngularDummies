@@ -6,7 +6,8 @@ class mainClass {
 
     }
 }
-$obj = new Class1();
+//Comentario
+$obj = new Class1('Ejemplo');
 $var = $obj->getdato();
 echo $var;
 ?>
