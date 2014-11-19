@@ -2,7 +2,7 @@
 Thumbs.db
 ehthumbs.db
 vendor/
-.settings/
+.settings/*
 .buildpath
 .project
 
