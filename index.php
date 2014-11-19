@@ -9,7 +9,7 @@ class mainClass {
 
     }
 }
-//Comentario lol
+//Comentario lol new lol
 $obj = new Class1('Ejemplo');
 $var = $obj->getdato();
 echo $var;
