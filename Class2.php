@@ -14,7 +14,9 @@ class Class2 {
 		echo("Example");
 		echo("Example2");
 
+
 		echo("Example3");
+
 
 	}
 
