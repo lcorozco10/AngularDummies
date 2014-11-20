@@ -1,24 +1,8 @@
-<?php
-/**
- * Info de la clase mainClass
- */
-require_once 'Class1.php';
-class mainClass {
-    function __construct() {
-        echo("Hola Mundo3");
-
-    }
-}
-//Comentario
-/* $obj = new Class1('Ejemplo');
-$var = $obj->getdato();
-echo $var; */
-?>
-
 <!doctype html>
 <html lang="en" ng-app>
 <head>
 	<meta charset="UTF-8" />
+	<link type="text/css" rel="stylesheet" href="css/css.css"/>
 	<title>JS Angular Examples</title>
 </head>
 	<body>
