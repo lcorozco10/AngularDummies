@@ -3,6 +3,11 @@ Thumbs.db
 ehthumbs.db
 vendor/
 .settings/
+<<<<<<< HEAD
+=======
+.settings
+settings
+>>>>>>> master
 .buildpath
 .project
 
