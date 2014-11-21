@@ -1,22 +1,50 @@
 <!doctype html>
-<html lang="en" data-ng-app >
-<head>
-	<meta charset="UTF-8"  data-ng-init="datarg=[1,2,3,4]";/>
-	<link type="text/css" rel="stylesheet" href="css/css.css"/>
-	<title>JS Angular Examples</title>
-</head>
+<html lang="en" data-ng-app='myApp' >
+	<head>
+		<meta charset="UTF-8" />
+		<link type="text/css" rel="stylesheet" href="css/css.css"/>
+		<title>JS Angular Examples</title>
+	</head>
 	<body>
-		<h1>Hola {{nombre}} Desarrollador</h1>
-		<form>
-			C&oacute;mo te llamas? <input type="text" data-ng-model="nombre" data-ng-init="nombre='Luis Orozco';">
-			<input type="button" value="hola" data-ng-click="nombre='hola'" />
-		</form>
-		<p data-ng-repeat="elemento in datarg" data-ng-init="paso=$index;">
-			Elemento con id {{paso}}: <span>{{nombre}}</span>
-		</p>
 
+		<div data-ng-init="datarg=[1,2,3,4];">
+			<h1>Hola {{nombre}} Desarrollador {{start}} </h1>
+			<form >
+				C&oacute;mo te llamas? <input type="text" data-ng-model="nombre" data-ng-init="nombre='Luis Orozco';">
+				<input type="button" value="hola" data-ng-click="nombre='hola'" />
+			</form>
+			<p data-ng-repeat="elemento in datarg" data-ng-init="paso=$index;">
+				Elemento con id {{paso}}: <span>{{nombre}}</span>
+			</p>
+		</div>
+
+		<div>
+    		<div data-ng-controller="FirstCtrl as ctrl">
+
+        		<h3> {{ctrl.data.message}}</h3>
+				<button data-ng-click = "ctrl.ocultar();">bandera</button>
+        		<div class="{{ctrl.data.message}} {{ctrl.data.val}}" ><b>Tag</b></div>
+
+        		<div data-ng-controller = "controladoh as hijo">
+        			{{hijo.data1.texto}}
+        		</div>
+
+    		</div>
+    		<div data-ng-controller="FirstCtr2">
+
+        		<h3> {{data.message}}</h3>
+
+        		<div class="{{data.message}}"></div>
+    		</div>
+    		<div data-ng-controller="FirstCtr3">
+
+        		<h3> {{data.message}}</h3>
+        		<div class="{{data.message}}"></div>
+    		</div>
+		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
-		<script type="text/javascript" src="js/jsAngularController.js"></script>
+		<script src="js/jsAngularController.js"></script>
+		<script src="js/DependModulos.js"></script>
 	</body>
 </html>

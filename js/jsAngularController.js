@@ -1,60 +1,45 @@
 /**
  *
  */
-function TestController($scope) {
-    $scope.questions = [
-        {
-            id : 1,
-            text:'Esto es una pregunta',
-            validAnswer : 1,
-            userAnswer : null,
-            status : '',
-            answers: [
-                {id : 1, text : 'Respuesta 1.1'},
-                {id : 2, text : 'Respuesta 1.2'},
-                {id : 3, text : 'Respuesta 1.3'}
-            ]
-        },
-        {
-            id : 2,
-            text:'Otra pregunta',
-            validAnswer : 2,
-            userAnswer : null,
-            status : '',
-            answers: [
-                {id : 1, text : 'Respuesta 2.1'},
-                {id : 2, text : 'Respuesta 2.2'}
-            ]
-        }
-    ];
 
-    $scope.userStatus = '';
 
-    $scope.validAnswers = 0;
+angular
+	.module('myApp', ["miModulo"])
+	// controller here
+	.controller('FirstCtrl', method1)
+	.controller('FirstCtr2', method2)
+	.controller('FirstCtr3', method3)
+	.controller('controladoh', method4);
 
-    $scope.validate = function (question) {
-        if (question.validAnswer == question.userAnswer) {
-            $scope.validAnswers ++;
-            question.status = 'ok';
-        } else {
-            if (question.status == 'ok' && $scope.validAnswers > 0) {
-                $scope.validAnswers --;
-            }
-            question.status = 'error';
-        }
 
-        updateUserStatus();
-    };
 
-    function updateUserStatus() {
-        var avgValidAnswers = ($scope.validAnswers / $scope.questions.length) * 100;
-        if (avgValidAnswers == 0) {
-            $scope.userStatus = 'looser';
-        } else if (avgValidAnswers == 100) {
-            $scope.userStatus = 'guru';
-        } else {
-            $scope.userStatus = 'poor';
-        }
+
+//Metodos de los cotroladores {logica de Negocio}
+function method1( $miFactoria) {
+	var booleano = false;
+	this.data = {message: $miFactoria.saludo(),val:'ocultar'};
+	this.ocultar = function()
+    {
+		if(booleano)
+			this.data = {message: $miFactoria.saludo(),val:'ocultar'};
+		else
+			this.data = {message: $miFactoria.saludo(),val:'mostrar'};
+		console.log(this.texto);
+		console.log(booleano);
+		booleano = !booleano;
     }
+};
 
-}
+function method2($scope, $miFactoria2) {
+    $scope.data = {message: $miFactoria2.saludo()};
+};
+
+function method3($scope, $miFactoria, $miFactoria2) {
+    $scope.data = {message: $miFactoria.saludo()+' & '+$miFactoria2.saludo()};
+};
+function method4() {
+    this.data1 = {texto:' Controllador Hijo '};
+
+};
+
+
