@@ -26,7 +26,7 @@
         		<div class="{{ctrl.data.message}} {{ctrl.data.val}}" ><b>Tag</b></div>
 
         		<div data-ng-controller = "controladoh as hijo">
-        			{{hijo.data1.texto}}
+        			<b>{{hijo.data1.texto | json}}</b>
         		</div>
 
     		</div>
