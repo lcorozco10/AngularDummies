@@ -8,7 +8,8 @@
 	<body>
 
 		<div data-ng-init="datarg=[1,2,3,4];">
-			<h1>Hola {{nombre}} Desarrollador {{start}} </h1>
+		    <code>{{ {"name":"Luis","age":"23"}  | json}}</code>
+			<h1>Hola {{nombre | uppercase}} Desarrollador {{start | lowercase}} </h1>
 			<form >
 				C&oacute;mo te llamas? <input type="text" data-ng-model="nombre" data-ng-init="nombre='Luis Orozco';">
 				<input type="button" value="hola" data-ng-click="nombre='hola'" />
@@ -26,7 +27,7 @@
         		<div class="{{ctrl.data.message}} {{ctrl.data.val}}" ><b>Tag</b></div>
 
         		<div data-ng-controller = "controladoh as hijo">
-        			<b>{{hijo.data1.texto | json}}</b>
+        			<b>{{hijo.data1.texto}}</b>
         		</div>
 
     		</div>

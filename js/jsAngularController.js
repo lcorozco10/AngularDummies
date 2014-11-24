@@ -17,6 +17,7 @@ angular
 //Metodos de los cotroladores {logica de Negocio}
 function method1($scope, $miFactoria) {
 	var booleano = false;
+	
 	this.data = {message: $miFactoria.saludo(),val:'ocultar'};
 	this.ocultar = function()
     {
@@ -24,10 +25,11 @@ function method1($scope, $miFactoria) {
 			this.data = {message: $miFactoria.saludo(),val:'ocultar'};
 		else
 			this.data = {message: $miFactoria.saludo(),val:'mostrar'};
-		console.log($scope.hijo.data1.texto);
-		console.log(booleano);
+		
+		
 		booleano = !booleano;
     }
+	
 };
 
 function method2($scope, $miFactoria2) {
@@ -40,7 +42,8 @@ function method3($scope, $miFactoria, $miFactoria2) {
 
 };
 function method4($scope) {
-    this.data1 = {texto:' Controllador Hijo '};
+	$scope.hijo.data1 = {texto:' Controllador Hijo '};
+	
     //optener variavles desde el cotrolador padre
     //console.log($scope.$parent.ctrl.data.message);
 };
