@@ -26,8 +26,11 @@
 				<button data-ng-click = "ctrl.ocultar();">bandera</button>
         		<div class="{{ctrl.data.message}} {{ctrl.data.val}}" ><b>Tag</b></div>
 				<span id="sp"></span>
+
         		<div data-ng-controller = "controladoh as hijo">
         			<b>{{hijo.data1.texto}}</b>
+        			<input type="checkbox" data-ng-model="hijo.activo" data-ng-click="hijo.cambio();" />
+        			<input type="checkbox"  data-ng-checked="master" />
         		</div>
 
     		</div>
@@ -41,6 +44,8 @@
 
         		<h3> {{data.message}}</h3>
         		<div class="{{data.message}}"></div>
+
+
     		</div>
 		</div>
 

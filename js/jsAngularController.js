@@ -47,6 +47,8 @@ function method3($scope, $miFactoria, $miFactoria2) {
 function method4($scope) {
 	$scope.hijo.data1 = {texto:' Controllador Hijo '};
 
+	$scope.hijo.cambio = function (){console.log($scope.hijo.activo);}
+
     //optener variavles desde el cotrolador padre
     //console.log($scope.$parent.ctrl.data.message);
 };
