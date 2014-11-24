@@ -9,7 +9,7 @@
 
 		<div data-ng-init="datarg=[1,2,3,4];">
 		    <code>{{ {"name":"Luis","age":"23"}  | json}}</code>
-			<h1>Hola {{nombre | uppercase}} Desarrollador {{start | lowercase}} </h1>
+			<h1 data-ng-class="nombre">Hola {{nombre | uppercase}} Desarrollador {{start | lowercase}} </h1>
 			<form >
 				C&oacute;mo te llamas? <input type="text" data-ng-model="nombre" data-ng-init="nombre='Luis Orozco';">
 				<input type="button" value="hola" data-ng-click="nombre='hola'" />
@@ -25,7 +25,7 @@
         		<h3> {{ctrl.data.message}}</h3>
 				<button data-ng-click = "ctrl.ocultar();">bandera</button>
         		<div class="{{ctrl.data.message}} {{ctrl.data.val}}" ><b>Tag</b></div>
-
+				<span id="sp"></span>
         		<div data-ng-controller = "controladoh as hijo">
         			<b>{{hijo.data1.texto}}</b>
         		</div>
@@ -47,5 +47,6 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
 		<script src="js/jsAngularController.js"></script>
 		<script src="js/DependModulos.js"></script>
+
 	</body>
 </html>
