@@ -20,27 +20,27 @@
 		</div>
 
 		<div>
-    		<div data-ng-controller="FirstCtrl">
+    		<div data-ng-controller="Controller1 as padre">
 
-        		<h3> {{data.message}}</h3>
-				<button  id="btn">bandera</button>
-        		<div class="{{data.message}} {{data.val}}" ><b>Tag</b></div>
+        		<h3> {{padre.data.message}}</h3>
+				<button data-ng-click = "padre.data.ocultar();"  id="btn">bandera</button>
+        		<div class="{{padre.data.message}} {{padre.data.val}}" ><b>Tag</b></div>
 				<span id="sp"></span>
 
-        		<div data-ng-controller = "controladoh as hijo">
-        			<b>{{hijo.data1.texto}}</b>
-        			<input type="checkbox" data-ng-model="hijo.activo" data-ng-click="hijo.cambio();" />
+        		<div data-ng-controller = "Controller1-2 as hijo">
+        			<b>{{hijo.data.texto}}</b>
+        			<input type="checkbox" data-ng-model="hijo.data.activo" data-ng-click="hijo.data.cambio();" />
         			<input type="checkbox"  data-ng-checked="master" />
         		</div>
 
     		</div>
-    		<div data-ng-controller="FirstCtr2">
+    		<div data-ng-controller="Controller2">
 
         		<h3> {{data.message}}</h3>
 
         		<div class="{{data.message}}"></div>
     		</div>
-    		<div data-ng-controller="FirstCtr3">
+    		<div data-ng-controller="Controller3">
 
         		<h3> {{data.message}}</h3>
         		<div class="{{data.message}}"></div>

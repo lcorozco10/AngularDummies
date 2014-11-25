@@ -2,6 +2,7 @@
  *
  */
 //Crear modulos de dependencias para que trabaje con la logica de la vista
+//angular.module('myApp')
 angular.module("miModulo", [])
 	.factory("$miFactoria", function()
 			{
@@ -23,3 +24,4 @@ angular.module("miModulo", [])
 		    }
 		}
 	);
+
