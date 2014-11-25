@@ -20,11 +20,11 @@
 		</div>
 
 		<div>
-    		<div data-ng-controller="FirstCtrl as ctrl">
+    		<div data-ng-controller="FirstCtrl">
 
-        		<h3> {{ctrl.data.message}}</h3>
-				<button data-ng-click = "ctrl.ocultar();">bandera</button>
-        		<div class="{{ctrl.data.message}} {{ctrl.data.val}}" ><b>Tag</b></div>
+        		<h3> {{data.message}}</h3>
+				<button  id="btn">bandera</button>
+        		<div class="{{data.message}} {{data.val}}" ><b>Tag</b></div>
 				<span id="sp"></span>
 
         		<div data-ng-controller = "controladoh as hijo">
