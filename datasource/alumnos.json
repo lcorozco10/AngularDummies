@@ -1,0 +1,49 @@
+[{
+    "nombre" : "Luis",
+    "apellido" :"Orozco",
+    "edad" : "24",
+    "materias" : [
+        {"id" : 1780, "nombre" : "Quimica"},
+        {"id" : 1357, "nombre" : "Fisica"},
+        {"id" : 1400, "nombre" : "Ingles"},
+        {"id" : 1148, "nombre" : "Matematicas"}
+    ]
+},{
+    "nombre" : "Pedro",
+    "apellido" :"Rodriguez",
+    "edad" : "26",
+    "materias" : [
+        {"id" : 9190, "nombre" : "Filosifia"},
+        {"id" : 1400, "nombre" : "Ingles"},
+        {"id" : 1148, "nombre" : "Matematicas"}
+    ]
+},{
+    "nombre" : "Adrian",
+    "apellido" :"Hernandez",
+    "edad" : "23",
+    "materias" : [
+        {"id" : 1357, "nombre" : "Fisica"},
+        {"id" : 1400, "nombre" : "Ingles"},
+        {"id" : 1148, "nombre" : "Matematicas"},
+        {"id" : 1254, "nombre" : "Programacion"}
+    ]
+},{
+    "nombre" : "Oscar",
+    "apellido" :"Sanchez",
+    "edad" : "22",
+    "materias" : [
+        {"id" : 9190, "nombre" : "Filosifia"},
+        {"id" : 1400, "nombre" : "Ingles"},
+        {"id" : 1148, "nombre" : "Matematicas"}
+    ]
+},{
+    "nombre" : "Alexis",
+    "apellido" :"Gonzalez",
+    "edad" : "27",
+    "materias" : [
+        {"id" : 1357, "nombre" : "Fisica"},
+        {"id" : 1400, "nombre" : "Ingles"},
+        {"id" : 1148, "nombre" : "Matematicas"},
+        {"id" : 1254, "nombre" : "Programacion"}
+    ]
+}]

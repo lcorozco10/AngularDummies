@@ -11,7 +11,7 @@ angular.module("miModulo", [])
 			        {
 			            return "Hola desde el modulo 1";
 			        }
-			    }
+			    };
 			}
 	)
 	.factory("$miFactoria2", function()
@@ -21,7 +21,17 @@ angular.module("miModulo", [])
 		        {
 		            return "Hola desde el modulo 2";
 		        }
-		    }
+		    };
 		}
 	);
 
+angular.module("serviceHttp", [])
+	.factory("$getAll", function($http){
+		return {
+	        getdata: function(respuesta)
+	        {
+	        	return $http.get("datasource/alumnos.json").success(respuesta);
+	        }
+	    };
+	}
+);

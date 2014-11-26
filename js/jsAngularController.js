@@ -9,9 +9,10 @@
 
 
 angular
-	.module('myApp', ["miModulo"]) //Inyectar dependencias [miModulo] para utilizarlas en mis controladores
+	.module('myApp', ["miModulo","serviceHttp"]) //Inyectar dependencias [miModulo] para utilizarlas en mis controladores
 
 		// Declaracion de Controladores
+		.controller('ControllerMain', mainMethod)
 		.controller('Controller1', method1)
 		.controller('Controller2', method2)
 		.controller('Controller3', method3)
@@ -44,6 +45,7 @@ function method1($http,$scope, $miFactoria) {
 
 		booleano = !booleano;
     };
+
 };
 
 //Metodo que recibe como parametro una dependencia $miFactoria2
@@ -72,4 +74,14 @@ function method4(http,scope) {
     //optener ng-model de el cotrolador padre
     console.info('Medodo del Ctrl Padre invocado desde el Ctrl Hijo: '+scope.$parent.padre.data.message);
 };
+
+
+function mainMethod ($scope,$getAll) {
+
+	$scope.nombre = '';
+	$getAll.getdata(
+			function(respuesta) {
+				$scope.datarg = respuesta;
+	});
+}
 
