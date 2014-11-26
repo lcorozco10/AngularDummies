@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-ng-app='myApp' >
+<html lang="en" data-ng-app='myApp'  >
 	<head>
 		<meta charset="UTF-8" />
 		<link type="text/css" rel="stylesheet" href="css/css.css"/>
@@ -9,7 +9,7 @@
 
 		<div data-ng-init="datarg=[1,2,3,4];">
 		    <code>{{ {"name":"Luis","age":"23"}  | json}}</code>
-			<h1 data-ng-class="nombre">Hola {{nombre | uppercase}} Desarrollador {{start | lowercase}} </h1>
+			<h1 data-ng-class="nombre" ng-bind>Hola {{nombre | uppercase}} Desarrollador {{start | lowercase}} </h1>
 			<form >
 				C&oacute;mo te llamas? <input type="text" data-ng-model="nombre" data-ng-init="nombre='Luis Orozco';">
 				<input type="button" value="hola" data-ng-click="nombre='hola'" />

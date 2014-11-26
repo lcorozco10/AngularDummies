@@ -25,17 +25,18 @@ angular
 
 //Metodo que recibe como parametro una dependencia $miFactoria
 function method1($http,$scope, $miFactoria) {
-	var booleano = true;
+	booleano = true;
 	//var myEl = angular.element( document.querySelector( '#sp' ) ).addClass('MyClass'); //obtener un selector con jQuerylite de AngularJS
 
 	this.data = {
 			message: $miFactoria.saludo(),
 			val:'mostrar',
 			ocultar :ocultar
-		}
+		};
 
 	function ocultar()
     {
+
 		if(booleano)
 			this.val = 'ocultar';
 		else
