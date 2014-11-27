@@ -20,6 +20,20 @@ angular
 
 
 
+		function config ($routeProvider) {
+  $routeProvider
+  .when('/', {
+    templateUrl: 'views/main.html',
+    controller: 'MainCtrl',
+    controllerAs: 'main'
+  });
+}
+angular
+  .module('myApp')
+  .config(config);
+
+
+
 /**********************************************************
  *Metodos de los cotroladores {logica de la vista}
  *********************************************************/
@@ -80,7 +94,9 @@ function mainMethod ($scope,$getAll) {
 
 	$scope.nombre = '';
 	$getAll.getdata(
-			function(respuesta) {
-				$scope.datarg = respuesta;
+			function(response) {
+				$scope.datarg = response;
 	});
+
 }
+

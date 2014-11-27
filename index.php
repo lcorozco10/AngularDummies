@@ -22,13 +22,15 @@
 
 			<div>
 			     <table border="1">
+			     	<thead>
+    			     	<tr>
+    			     		<th>Nombre</th>
+    			     		<th>Apellido</th>
+    			     		<th>Edad</th>
+    			     		<th>Cursos</th>
+    			     	</tr>
+    			     </thead>
 			     	<tbody >
-			     		<tr>
-			     			<th>Nombre</th>
-			     			<th>Apellido</th>
-			     			<th>Edad</th>
-			     			<th>Cursos</th>
-			     		</tr>
 			     		<tr  data-ng-repeat="elemento in datarg | filter:nombre" data-ng-init="paso=$index;">
 			     			<td>{{datarg[paso].nombre}}</td>
 			     			<td>{{datarg[paso].apellido}}</td>
@@ -80,6 +82,9 @@
 
 
     		</div>
+    		<div>
+                {{ ctrlobj.data }}
+            </div>
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
