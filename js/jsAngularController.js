@@ -84,4 +84,3 @@ function mainMethod ($scope,$getAll) {
 				$scope.datarg = respuesta;
 	});
 }
-
